@@ -1,0 +1,119 @@
+Codebook
+This codebook describes the variables and data in Tidydataset.txt
+
+Data
+Data included in Tidydataset is a subset of the Human Activity Recognition using Smartphones Data Set
+Source: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
+The data contains the measurements of 30 voluntaries aged between 19-48 years, who wore a smartphone (Samsung Galaxy S II) on their waist
+while performing six different activities.
+
+Each row in the dataset represents a volunteer and an activity.
+
+Subject 
+Values Description
+(1-30) Volunteer's ID
+
+Activities
+Level   Activities          Description
+1       WALKING             Test subject was walking during the test
+2       WALKING_UPSTAIRS    Test subject was walking up a flight of steps during the test
+3       WALKING_DOWNSTAIRS  Test subject was walking down a flight of steps during the test
+4       SITTING             Test subject was sitting during the test
+5       STANDING            Test subject was standing during the test
+6       LAYING              Test subject was laying down during the test
+
+Sample
+Volunteers were randomly split into a training group and test group
+train   Subject formed part of the training group 
+test    Subject formed part of the test group
+
+Measurements
+Using the smartphone's accelerometer and gyroscope, 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. 
+Measurements are split in two: Time Domain Signals (prefix t) and Frequency Domain Signal (prefix f).
+
+Time Domain Signals 
+Measurement	          Description
+tBodyAccMeanX	        Mean Body Acceleration (X coordinate)
+tBodyAccMeanY	        Mean Body Acceleration (Y coordinate)
+tBodyAccMeanZ	        Mean Body Acceleration (Z coordinate)
+tBodyAccMagMean	      Mean Body Acceleration (Magnitude)
+tBodyAccStdX	        Mean Standard Deviation Body Acceleration (X coordinate)
+tBodyAccStdY	        Mean Standard Deviation Body Acceleration (Y coordinate)
+tBodyAccStdZ	        Mean Standard Deviation Body Acceleration (Z coordinate)
+tBodyAccMagStd	      Mean Standard Deviation Body Acceleration (Magnitude)
+	
+tBodyAccJerkMeanX	    Mean Body Acceleration Jerk (X coordinate)
+tBodyAccJerkMeanY	    Mean Body Acceleration Jerk (Y coordinate)
+tBodyAccJerkMeanZ	    Mean Body Acceleration Jerk (Z coordinate)
+tBodyAccJerkMagMean	  Mean Body Acceleration Jerk (Magnitude)
+tBodyAccJerkStdX	    Mean Standard Deviation Body Acceleration Jerk (X coordinate)
+tBodyAccJerkStdY	    Mean Standard Deviation Body Acceleration Jerk (Y coordinate)
+tBodyAccJerkStdZ	    Mean Standard Deviation Body Acceleration Jerk (Z coordinate)
+tBodyAccJerkMagStd	  Mean Standard Deviation Body Acceleration Jerk (Magnitude)
+	
+tBodyGyroMeanX	      Mean Body Gyroscope  (X coordinate)
+tBodyGyroMeanY	      Mean Body Gyroscope  (Y coordinate)
+tBodyGyroMeanZ	      Mean Body Gyroscope  (Z coordinate)
+tBodyGyroMagMean	    Mean Body Gyroscope  (Magnitude)
+tBodyGyroStdX	        Mean Standard Deviation Body Gyroscope  (X coordinate)
+tBodyGyroStdY	        Mean Standard Deviation Body Gyroscope  (Y coordinate)
+tBodyGyroStdZ	        Mean Standard Deviation Body Gyroscope  (Z coordinate)
+tBodyGyroMagStd	      Mean Standard Deviation Body Gyroscope  (Magnitude)
+	
+tBodyGyroJerkMeanX	  Mean Body Gyroscope Jerk (X coordinate)
+tBodyGyroJerkMeanY	  Mean Body Gyroscope Jerk (Y coordinate)
+tBodyGyroJerkMeanZ	  Mean Body Gyroscope Jerk (Z coordinate)
+tBodyGyroJerkMagMean	Mean Body Gyroscope Jerk (Magnitude)
+tBodyGyroJerkStdX	    Mean Standard Deviation Body Gyroscope Jerk (X coordinate)
+tBodyGyroJerkStdY	    Mean Standard Deviation Body Gyroscope Jerk (Y coordinate)
+tBodyGyroJerkStdZ	    Mean Standard Deviation Body Gyroscope Jerk (Z coordinate)
+tBodyGyroJerkMagStd	  Mean Standard Deviation Body Gyroscope Jerk (Magnitude)
+	
+tGravityAccMeanX	    Mean Gravity Acceleration (X coordinate)
+tGravityAccMeanY	    Mean Gravity Acceleration (Y coordinate)
+tGravityAccMeanZ	    Mean Gravity Acceleration (Z coordinate)
+tGravityAccMagMean	  Mean Gravity Acceleration (Magnitude)
+tGravityAccStdX	      Mean Standard Deviation Gravity Acceleration (X coordinate)
+tGravityAccStdY	      Mean Standard Deviation Gravity Acceleration (Y coordinate)
+tGravityAccStdZ	      Mean Standard Deviation Gravity Acceleration (Z coordinate)
+tGravityAccMagStd	    Mean Standard Deviation Gravity Acceleration (Magnitude)
+	
+Similarly for Frequency Domain Signals (prefix f)
+Measurement			      Description
+fBodyAccMeanX			    Mean Body Acceleration (X coordinate)
+fBodyAccMeanY			    Mean Body Acceleration (Y coordinate)
+fBodyAccMeanZ			    Mean Body Acceleration (Z coordinate)
+fBodyAccMagMean			  Mean Body Acceleration (Magnitude)
+fBodyAccStdX			    Mean Standard Deviation Body Acceleration (X coordinate)
+fBodyAccStdY			    Mean Standard Deviation Body Acceleration (Y coordinate)
+fBodyAccStdZ			    Mean Standard Deviation Body Acceleration (Z coordinate)
+fBodyAccMagStd			  Mean Standard Deviation Body Acceleration (Magnitude)
+			
+fBodyAccJerkMeanX			Mean Body Acceleration Jerk (X coordinate)
+fBodyAccJerkMeanY			Mean Body Acceleration Jerk (Y coordinate)
+fBodyAccJerkMeanZ			Mean Body Acceleration Jerk (Z coordinate)
+fBodyAccJerkMagMean		Mean Body Acceleration Jerk (Magnitude)
+fBodyAccJerkStdX			Mean Standard Deviation Body Acceleration Jerk (X coordinate)
+fBodyAccJerkStdY			Mean Standard Deviation Body Acceleration Jerk (Y coordinate)
+fBodyAccJerkStdZ			Mean Standard Deviation Body Acceleration Jerk (Z coordinate)
+fBodyAccJerkMagStd		Mean Standard Deviation Body Acceleration Jerk (Magnitude)
+			
+fBodyGyroMeanX			  Mean Body Gyroscope  (X coordinate)
+fBodyGyroMeanY			  Mean Body Gyroscope  (Y coordinate)
+fBodyGyroMeanZ			  Mean Body Gyroscope  (Z coordinate)
+fBodyGyroMagMean			Mean Body Gyroscope  (Magnitude)
+fBodyGyroStdX			    Mean Standard Deviation Body Gyroscope  (X coordinate)
+fBodyGyroStdY			    Mean Standard Deviation Body Gyroscope  (Y coordinate)
+fBodyGyroStdZ			    Mean Standard Deviation Body Gyroscope  (Z coordinate)
+fBodyGyroMagStd			  Mean Standard Deviation Body Gyroscope  (Magnitude)
+			
+fBodyGyroJerkMeanX		Mean Body Gyroscope Jerk (X coordinate)
+fBodyGyroJerkMeanY		Mean Body Gyroscope Jerk (Y coordinate)
+fBodyGyroJerkMeanZ		Mean Body Gyroscope Jerk (Z coordinate)
+fBodyGyroJerkMagMean	Mean Body Gyroscope Jerk (Magnitude)
+fBodyGyroJerkStdX			Mean Standard Deviation Body Gyroscope Jerk (X coordinate)
+fBodyGyroJerkStdY			Mean Standard Deviation Body Gyroscope Jerk (Y coordinate)
+fBodyGyroJerkStdZ			Mean Standard Deviation Body Gyroscope Jerk (Z coordinate)
+fBodyGyroJerkMagStd		Mean Standard Deviation Body Gyroscope Jerk (Magnitude)
+
