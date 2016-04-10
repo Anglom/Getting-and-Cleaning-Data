@@ -29,19 +29,21 @@ featuresmeanstd=gsub("BodyBody","Body",featuresmeanstd)
 train.Data <- read.table("UCI HAR Dataset/train/X_train.txt")[featuresmeanstd.Row]
 train.Subjects <- read.table("UCI HAR Dataset/train/subject_train.txt")
 train.Activity <- read.table("UCI HAR Dataset/train/Y_train.txt")
-train <- cbind(train.Subjects, train.Activity,train.Data)
-colnames(train) <- c("subject", "activity", featuresmeanstd)
+train.Sample<-"train"
+train <- cbind(train.Subjects, train.Activity,train.Sample,train.Data)
+colnames(train) <- c("subject", "activity","sample", featuresmeanstd)
 
 #Loading the test datasets
 test.Data <- read.table("UCI HAR Dataset/test/X_test.txt")[featuresmeanstd.Row]
 test.Subjects <- read.table("UCI HAR Dataset/test/subject_test.txt")
 test.Activity <- read.table("UCI HAR Dataset/test/Y_test.txt")
-test <- cbind(test.Subjects, test.Activity,test.Data)
-colnames(test) <- c("subject", "activity", featuresmeanstd)
+test.Sample<-"test"
+test <- cbind(test.Subjects, test.Activity,test.Sample,test.Data)
+colnames(test) <- c("subject", "activity","sample", featuresmeanstd)
 
 #Merging the training and test datasets
 dataframe<-rbind(train,test)
-colnames(dataframe) <- c("subject", "activity", featuresmeanstd)
+colnames(dataframe) <- c("subject", "activity","sample", featuresmeanstd)
 
 #Adding descriptive activity names to name the activities in the data set
 dataframe$activity <- factor(dataframe$activity, levels = activity[,1], labels = activity[,2])
@@ -50,8 +52,8 @@ dataframe$subject <- as.factor(dataframe$subject)
 
 #Creating a tidy data set with the average of each variable for each activity and each subject.
 #Using package reshape
-melteddata<-melt(dataframe,id=c("activity","subject"))
-tidydataset<-cast(melteddata,activity+subject~variable,mean)
+melteddata<-melt(dataframe,id=c("activity","subject","sample"))
+tidydataset<-cast(melteddata,activity+subject+sample~variable,mean)
 
 #Exporting the tidy dataset to a text file
-write.table(tidydataset, "c:/Users/sg0927964/Documents/tidydataset.txt", sep="\t")
+write.table(tidydataset, "c:/tidydataset.txt", sep="\t")
